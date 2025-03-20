@@ -16,13 +16,12 @@ import javafx.scene.text.Text;
 public class MainView extends VBox {
 
   private DeckOfCards deck;
-  private Hand hand;
+  private final Hand hand;
 
   private FlowPane handDisplay;
   private Text statusHand;
   private Text statusDeck;
 
-  private Button checkHandButton;
   private Text sumOfFacesText;
   private Text heartsText;
   private Text spadeQueenText;
@@ -50,7 +49,7 @@ public class MainView extends VBox {
     bottomPanel.getChildren().addAll(clearButton, statusHand, statusDeck);
 
     HBox analysisPanel = new HBox(10);
-    checkHandButton = new Button("Check Hand");
+    Button checkHandButton = new Button("Check Hand");
     sumOfFacesText = new Text("Sum of faces: 0");
     heartsText = new Text("Hearts: ?");
     spadeQueenText = new Text("Spade queen? ");

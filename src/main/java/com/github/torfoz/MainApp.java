@@ -16,7 +16,7 @@ public class MainApp extends Application {
     mainView = new MainView();
 
     // Scene + Stage
-    Scene scene = new Scene(mainView, 700, 400);
+    Scene scene = new Scene(mainView, 800, 600);
     primaryStage.setTitle("Card Game");
     primaryStage.setScene(scene);
     primaryStage.show();

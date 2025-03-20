@@ -14,10 +14,6 @@ public class Hand {
     return cards;
   }
 
-  public void removeCard(String key) {
-    cards.remove(key);
-  }
-
   public void clear() {
     cards.clear();
   }
